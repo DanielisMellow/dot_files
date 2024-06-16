@@ -35,6 +35,7 @@ return {
 				"clangd",
 				"jedi_language_server", -- Python LSP
 				"cmake",
+				"bashls",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
@@ -50,6 +51,8 @@ return {
 				"isort", -- Python formatter
 				"pylint", -- Python lintter
 				"debugpy",
+				"shfmt",
+				"shellcheck",
 			},
 
 			automatic_installation = true, -- not the same as ensure_installed

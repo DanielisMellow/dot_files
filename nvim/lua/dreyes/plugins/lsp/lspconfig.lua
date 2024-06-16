@@ -93,8 +93,7 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
-		-- configure rust server
-		lspconfig["rust_analyzer"].setup({
+		lspconfig["bashls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
