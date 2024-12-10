@@ -34,7 +34,6 @@ return {
 				"lua_ls",
 				"clangd",
 				"jedi_language_server", -- Python LSP
-				"cmake",
 				"bashls",
 			},
 			-- auto-install configured servers (with lspconfig)
@@ -50,6 +49,7 @@ return {
 				"black", -- Python formatter
 				"isort", -- Python formatter
 				"pylint", -- Python lintter
+				"pyright",
 				"debugpy",
 				"shfmt",
 				"shellcheck",

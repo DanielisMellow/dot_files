@@ -75,6 +75,12 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
+
+		-- configure python server
+		lspconfig["pyright"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
 		-- configure c/c++ server
 		lspconfig["clangd"].setup({
 			capabilities = capabilities,
@@ -89,10 +95,6 @@ return {
 			},
 		})
 
-		lspconfig["cmake"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
 		lspconfig["bashls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
