@@ -22,6 +22,7 @@
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.home-manager
   ];
 
   nixpkgs = {
@@ -178,10 +179,6 @@
   alacritty
   neovim
   vimPlugins.telescope-fzf-native-nvim
-  git
-  tree
-  fzf
-  ripgrep
 
   # Programming
   gnumake
