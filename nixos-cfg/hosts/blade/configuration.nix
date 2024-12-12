@@ -24,6 +24,10 @@
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
   ];
+  home-manager = {
+    useUserPackages = true;
+    extraSpecialArgs = {inherit input outputs;};
+  }
 
   nixpkgs = {
     # You can add overlays here
