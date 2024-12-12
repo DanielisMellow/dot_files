@@ -1,0 +1,3 @@
+{
+  imports = [./lizardking.nix];
+}
