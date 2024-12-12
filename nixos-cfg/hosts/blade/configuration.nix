@@ -23,11 +23,13 @@
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.home-manager
+    ../../modules/blade/default.nix
+
   ];
   home-manager = {
     useUserPackages = true;
-    extraSpecialArgs = {inherit input outputs;};
-  }
+    extraSpecialArgs = {inherit inputs outputs;};
+  };
 
   nixpkgs = {
     # You can add overlays here
@@ -107,21 +109,6 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   
-  # Window Manager
-  programs.hyprland = {
-   enable = true;
-   xwayland.enable = true;
-  };
-  environment.sessionVariables = {
-   # If your cursor becomes invisiable
-   WLR_NO_HARDWARE_CURSORS = "1";
-   # Hint electro apps to use wayland
-   NIXOS_OZONE_WL = "1";
-  };
-  hardware = {
-    # Opengl
-    opengl.enable = true;
-  };
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -177,40 +164,6 @@
   #  wget
   # Home Manager
   home-manager
-
-  # Terminal 
-  kitty
-  alacritty
-  neovim
-  vimPlugins.telescope-fzf-native-nvim
-
-  # Programming
-  gnumake
-  gcc
-  python3
-  clang
-  # Hyprland
-  waybar
-  rofi-wayland
-  pyprland
-  hyprcursor
-  hyprlock
-  hypridle
-  hyprpaper
-  xdg-desktop-portal-hyprland
-
-  # notificans
-  dunst
-  libnotify
-
-  # Wayland stuff
-  xwayland
-  wl-clipboard
-  cliphist
-
-  # Snapshot Editng
-  swappy
-
 
   # Utilities for VM
   spice-vdagent
