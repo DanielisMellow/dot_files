@@ -12,5 +12,8 @@
   tree
   fzf
   ripgrep
+  unzip
+  curl
+  ffmpeg
   ];
 }

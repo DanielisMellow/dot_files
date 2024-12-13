@@ -3,5 +3,8 @@
 {
   # List your module files here
   # my-module = import ./my-module.nix;
+  imports = [
   ./lang/cc.nix
+  ./lang/python.nix
+  ];
 }

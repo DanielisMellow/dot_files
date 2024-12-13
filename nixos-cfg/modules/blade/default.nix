@@ -5,8 +5,11 @@
   ./apps/neovim.nix
   ./apps/terminal-cli.nix
   ./apps/terminals.nix
+  ./misc/fonts.nix
   ./services/wayland.nix
+  
   ./wm/hyprland.nix
   ./wm/hyprland-addons.nix
+  .
   ];
 }
