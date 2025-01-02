@@ -62,12 +62,11 @@
           ./hosts/blade/
         ];
       vm = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [ ./hosts/vm ];
         specialArgs = {
-        host = "vm";
-        inherit self inputs outputs;
+            inherit inputs outputs;
+            host = "vm";
         };
+        modules = [ ./hosts/vm ];
         };
       };
     };
@@ -76,7 +75,7 @@
     # Available through 'home-manager --flake .#your-username@your-hostname'
     homeConfigurations = {
       # FIXME replace with your username@hostname
-      "lizardking@blade" = home-manager.lib.homeManagerConfiguration {
+      "lizard@vm" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [

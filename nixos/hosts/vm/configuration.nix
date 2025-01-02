@@ -10,6 +10,7 @@
   imports = [
     ./hardware-configuration.nix
     ./../../modules/core
+    ./../../modules/vm
     inputs.home-manager.nixosModules.home-manager
   ];
 

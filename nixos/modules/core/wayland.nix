@@ -1,6 +1,5 @@
 { inputs, pkgs, ... }:
 {
-  programs.hyprland.enable = true;
   xdg.portal = {
     enable = true;
     wlr.enable = true;
@@ -12,6 +11,8 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # xwaylandvideobridge
+    xwaylandvideobridge
+    wl-clipboard
+    cliphist
   ];
 }

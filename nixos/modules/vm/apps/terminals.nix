@@ -3,9 +3,9 @@
 
 {
   environment.systemPackages = with pkgs; [
-      # Wayland stuff
-      xwayland
-      wl-clipboard
-      cliphist
+
+  # Terminal 
+  alacritty
+  kitty
   ];
 }
