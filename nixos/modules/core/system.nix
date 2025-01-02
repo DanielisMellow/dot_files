@@ -3,6 +3,8 @@
   pkgs,
   lib,
   inputs,
+  outputs,
+  config,
   ...
 }:
 {
@@ -12,10 +14,6 @@
     settings = {
       auto-optimise-store = true;
       experimental-features = "nix-command flakes";
-      experimental-features = [
-            "nix-command"
-            "flakes"
-          ];
       # Opinionated: disable global registry
       flake-registry = "";
       # Workaround for https://github.com/NixOS/nix/issues/9574

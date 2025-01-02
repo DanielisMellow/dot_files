@@ -3,4 +3,4 @@
   services = {
    printing.enable = true;
   };
-};
+}
