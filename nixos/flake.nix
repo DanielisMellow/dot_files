@@ -49,7 +49,7 @@
     nixosModules = import ./modules/core;
     # Reusable home-manager modules you might want to export
     # These are usually stuff you would upstream into home-manager
-    homeManagerModules = import ./modules/home-manager;
+    homeManagerModules = import ./modules/home;
 
     # NixOS configuration entrypoint
     # Available through 'nixos-rebuild --flake .#your-hostname'
@@ -70,7 +70,10 @@
       # FIXME replace with your username@hostname
       "lizard@vm" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux; # Home-manager requires 'pkgs' instance
-        extraSpecialArgs = {inherit inputs outputs;};
+        extraSpecialArgs = {
+		inherit inputs outputs;
+		host = "vm";
+	};
         modules = [
           # > Our main home-manager configuration file <
           ./home-manager/home.nix

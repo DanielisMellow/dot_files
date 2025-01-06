@@ -6,9 +6,9 @@
   imports = [
   ./lang/cc.nix
   ./lang/python.nix
-  ./hyprland/
+  ./hyprland/default.nix
   ./scripts/scripts.nix
   ./swaync/swaync.nix
-  ./waybar/
+  ./waybar/default.nix
   ];
 }
