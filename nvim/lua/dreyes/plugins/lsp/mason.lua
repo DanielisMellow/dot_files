@@ -49,7 +49,6 @@ return {
 				"black", -- Python formatter
 				"isort", -- Python formatter
 				"pylint", -- Python lintter
-				"pyright",
 				"debugpy",
 				"shfmt",
 				"shellcheck",
