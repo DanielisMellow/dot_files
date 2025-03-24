@@ -20,11 +20,13 @@
     swww
     wallust
     cava
-
+    nwg-look
     # Notifications
     libnotify
     dunst
-
     openssl
+
+    # Logout menu
+    wlogout
     ];
 }

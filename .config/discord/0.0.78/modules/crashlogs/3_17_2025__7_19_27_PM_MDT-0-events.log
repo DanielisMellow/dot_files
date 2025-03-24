@@ -1,0 +1,15 @@
+3/17/2025, 7:19:27 PM MDT 0: 
+
+----------------------------------------------
+3/17/2025, 7:19:27 PM MDT 1: Discord starting: {"releaseChannel":"stable","version":"0.0.78"}, modulepath: /home/lizard/.config/discord/0.0.78/modules
+3/17/2025, 7:19:27 PM MDT 2: ✅ webContents.created web1 "index.html"
+3/17/2025, 7:19:27 PM MDT 3: ✅ window.created win1 "discord"
+3/17/2025, 7:19:27 PM MDT 4: ✅ webContents.did-finish-load web1
+3/17/2025, 7:19:33 PM MDT 5: ✅ webContents.created web2 ""
+3/17/2025, 7:19:33 PM MDT 6: ✅ window.created win2 "Discord"
+3/17/2025, 7:19:35 PM MDT 7: ✅ webContents.did-finish-load web2
+3/17/2025, 7:19:35 PM MDT 8: window.close win1
+3/17/2025, 7:19:35 PM MDT 9: webContents.destroyed web1
+3/17/2025, 7:19:35 PM MDT 10: window.closed win1
+3/17/2025, 7:19:50 PM MDT 11: window.close win2
+3/17/2025, 7:20:58 PM MDT 12: window.close win2

@@ -2,12 +2,7 @@
 # These should be stuff you would like to share with others, not your personal configurations.
 {
   imports = [
-  ./apps/browser.nix
-  ./apps/neovim.nix
-  ./apps/terminal-cli.nix
-  ./apps/terminals.nix
-  
-  ./wm/hyprland.nix
-  ./wm/hyprland-addons.nix 
+        ./wm/hyprland.nix
+        ./wm/hyprland-addons.nix 
   ];
 }

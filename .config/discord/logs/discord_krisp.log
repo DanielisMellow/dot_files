@@ -1,0 +1,6 @@
+[2025-Mar-17 19:19:36.847 -06:00][ 8041: 8041][info ] Logging initialized
+[2025-Mar-17 19:19:36.847 -06:00][ 8041: 8041][info ] Initializing krisp SDK...
+[2025-Mar-17 19:19:36.847 -06:00][ 8041: 8041][info ] DoKrispInitialize
+[2025-Mar-17 19:19:37.140 -06:00][ 8041: 8041][warning] Application not signed by Discord, Krisp is not enabled
+[2025-Mar-17 19:19:37.140 -06:00][ 8041: 8041][warning] Failed to setup Krisp module, error code: -3
+[2025-Mar-17 19:19:37.140 -06:00][ 8041: 8041][info ] Krisp SDK initialized

@@ -11,13 +11,8 @@
     ./hardware-configuration.nix
     ./../../modules/core
     ./../../modules/vm
-    inputs.home-manager.nixosModules.home-manager
   ];
 
-  home-manager = {
-    useUserPackages = true;
-    extraSpecialArgs = {inherit inputs outputs;};
-  };
 
   # kvm/qemu doesn't use UEFI firmware mode by default.
   # so we force-override the setting here
@@ -28,7 +23,6 @@
   boot.loader.grub.useOSProber = false;
 
   environment.systemPackages = with pkgs; [
-  home-manager
   spice-vdagent
   ];
 

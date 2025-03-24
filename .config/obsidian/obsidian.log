@@ -1,0 +1,8 @@
+2025-03-18 01:19:18 Loading main app package /nix/store/qmsigfyalzx4797bxw0j70sa4qdcband-obsidian-1.7.6/share/obsidian/obsidian.asar
+2025-03-18 01:19:18 Checking for update using Github
+2025-03-18 01:19:19 Success.
+2025-03-18 01:19:19 Latest version is 1.8.9
+2025-03-18 01:19:19 Downloading update from https://github.com/obsidianmd/obsidian-releases/releases/download/v1.8.9/obsidian-1.8.9.asar.gz
+2025-03-18 01:19:20 Verifying hash & signature. Size= 8125625
+2025-03-18 01:19:20 Saving file
+2025-03-18 01:19:20 Update complete.

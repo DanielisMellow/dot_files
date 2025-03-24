@@ -8,6 +8,7 @@ fonts.packages = with pkgs; [
     jetbrains-mono
     font-awesome
 	terminus_font
+    powerline-fonts
 
     (nerdfonts.override { fonts = ["Hack" "JetBrainsMono"]; })
  	];

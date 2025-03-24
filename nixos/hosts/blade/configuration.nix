@@ -22,14 +22,9 @@
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
-    inputs.home-manager.nixosModules.home-manager
     ../../modules/blade/default.nix
 
   ];
-  home-manager = {
-    useUserPackages = true;
-    extraSpecialArgs = {inherit inputs outputs;};
-  };
 
   nixpkgs = {
     # You can add overlays here
@@ -162,8 +157,6 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-  # Home Manager
-  home-manager
 
   # Utilities for VM
   spice-vdagent

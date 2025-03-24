@@ -1,0 +1,7 @@
+2025/03/16-19:20:46.500 60e9 Reusing MANIFEST /home/lizard/.config/BraveSoftware/Brave-Browser/Default/WebStorage/2/IndexedDB/indexeddb.leveldb/MANIFEST-000001
+2025/03/16-19:20:46.500 60e9 Recovering log #4
+2025/03/16-19:20:46.500 60e9 Reusing old log /home/lizard/.config/BraveSoftware/Brave-Browser/Default/WebStorage/2/IndexedDB/indexeddb.leveldb/000004.log 
+2025/03/16-19:20:46.548 60fa Level-0 table #8: started
+2025/03/16-19:20:46.564 60fa Level-0 table #8: 7446 bytes OK
+2025/03/16-19:20:46.601 60fa Delete type=0 #4
+2025/03/16-19:20:46.602 60e9 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
